@@ -1,0 +1,34 @@
+Package: fuz.merge
+Date: 2020-9-1
+Type: Package
+Title: This package provides functions to implement and aid in Fuzzy Matching
+Version: 0.1.0
+BugReports: https://github.com/hkarp1/fuz.merge/issues
+Authors@R: c(person(given = "Harrison",
+               family = "Karp",
+               role = c("cre"),
+               email = "hkarp@wesleyan.edu"),
+        person(given = "Kenneth",
+               family = "Stevenson",
+               role = c("aut"),
+               email = "kstevenson@wesleyan.edu"))
+Description: This package lets you implement fuzzy merging so you can merge datasets
+    when the values to be matched aren't exactly the same. It also includes a clean
+    function to remove prefixes, sufixes, and other sequences of characters which
+    the user wants to remove. It also includes a function, scramble(), which will change
+    some of the characters of the selected column to allow for testing of the package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr,
+    varhandle,
+    stringdist,
+    rapportools,
+    knitr
+RoxygenNote: 7.0.2
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
